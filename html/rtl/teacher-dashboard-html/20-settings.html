@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="rtl">
+<!-- BEGIN: Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui">
+    <meta name="description"
+        content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
+    <meta name="keywords"
+        content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
+    <meta name="author" content="PIXINVENT">
+    <title>Account Settings - Vuexy - Bootstrap HTML admin template</title>
+    <link rel="apple-touch-icon" href="../../../app-assets/images/ico/apple-icon-120.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../app-assets/images/ico/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600"
+        rel="stylesheet">
+
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/vendors-rtl.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/forms/select/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/pickers/flatpickr/flatpickr.min.css">
+    <!-- END: Vendor CSS-->
+
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/colors.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/components.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/themes/dark-layout.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/themes/bordered-layout.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/themes/semi-dark-layout.css">
+
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/core/menu/menu-types/vertical-menu.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/plugins/forms/pickers/form-pickadate.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/plugins/forms/pickers/form-flat-pickr.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/plugins/forms/form-validation.css">
+    <!-- END: Page CSS-->
+
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/custom-rtl.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/scss/style-rtl.css">
+    <!-- END: Custom CSS-->
+
+</head>
+<!-- END: Head-->
+
+<!-- BEGIN: Body-->
+
+<body class="vertical-layout vertical-menu-modern  navbar-floating footer-static  " data-open="click"
+    data-menu="vertical-menu-modern" data-col="">
+
+    <!-- BEGIN: Header-->
+    <nav
+        class="header-navbar navbar navbar-expand-lg align-items-center floating-nav navbar-light navbar-shadow container-xxl">
+        <div class="navbar-container d-flex content">
+
+            <div class="bookmark-wrapper d-flex align-items-center">
+
+                <ul class="nav navbar-nav d-xl-none">
+                    <li class="nav-item"><a class="nav-link menu-toggle" href="javascript:void(0);"><i class="ficon"
+                                data-feather="menu"></i></a></li>
+                </ul>
+
+                <div class="content-header">
+                    <div class="content-header-left">
+                        <div class="breadcrumbs-top">
+                            <div class="">
+                                <h2 class="content-header-title">الإعدادات</h2>
+                                <div class="breadcrumb-wrapper">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="index.html">الرئيسية</a>
+                                        </li>
+                                        <li class="breadcrumb-item active">الإعدادات
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <ul class="nav navbar-nav align-items-center ml-auto">
+
+                <!-- <li class="nav-item d-lg-block"><a class="nav-link nav-link-style"><i class="ficon"
+                            data-feather="moon"></i></a></li>
+
+                <li class="nav-item nav-search"><a class="nav-link nav-link-search"><i class="ficon"
+                            data-feather="search"></i></a>
+                    <div class="search-input">
+                        <div class="search-input-icon"><i data-feather="search"></i></div>
+                        <input class="form-control input" type="text" placeholder="استكشف مَرِن ..." tabindex="-1"
+                            data-search="search">
+                        <div class="search-input-close"><i data-feather="x"></i></div>
+                        <ul class="search-list search-list-main"></ul>
+                    </div>
+                </li> -->
+
+                <li class="nav-item dropdown dropdown-user">
+                    <a class="nav-link dropdown-toggle dropdown-user-link" id="dropdown-user" href="javascript:void(0);"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="avatar"><img class="round" src="../../../app-assets/images/avatars/avatar.png"
+                                alt="avatar" height="35" width="35"></span>
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-user">
+                        <a class="dropdown-item" href="page-profile.html"><i class="mr-50"
+                                data-feather="user"></i>إعدادت الحساب</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="page-auth-login-v2.html"><i class="mr-50"
+                                data-feather="power"></i>تسجيل الخروج</a>
+                    </div>
+
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <!-- END: Header-->
+
+
+    <!-- BEGIN: Main Menu-->
+    <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
+
+        <div class="navbar-header">
+            <ul class="nav navbar-nav flex-row">
+                <li class="nav-item mr-auto"><a class="navbar-brand"
+                        href="../../../html/rtl/vertical-menu-template/index.html">
+                        <span class="brand-logo">
+                            <img src="../../../app-assets/images/logo/m icon.png" alt="">
+                        </span>
+                        <h2 class="brand-text">
+                            <!-- <img src="../../../app-assets/images/logo/logon.png" alt=""> -->
+                            ماسترباس برو
+                        </h2>
+                    </a></li>
+                <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i
+                            class="d-block d-xl-none text-primary toggle-icon font-medium-4" data-feather="x"></i><i
+                            class="d-none d-xl-block collapse-toggle-icon font-medium-4  text-primary"
+                            data-feather="disc" data-ticon="disc"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="shadow-bottom"></div>
+
+        <div class="main-menu-content">
+            <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+
+                <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">لوحة التحكم</span><i
+                        data-feather="more-horizontal"></i></li>
+
+                <li class="nav-item active"><a class="d-flex align-items-center" href="index.html"><i
+                            data-feather="home"></i><span class="menu-title text-truncate"
+                            data-i18n="Dashboards">الرئيسية</span></a>
+                </li>
+
+                <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">منطقة الطلاب</span><i
+                        data-feather="more-horizontal"></i>
+                </li>
+
+
+                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="user"></i><span
+                            class="menu-title text-truncate" data-i18n="Invoice">الطلاب</span></a>
+                    <ul class="menu-content">
+                        <li><a class="d-flex align-items-center" href="app-invoice-list.html"><i
+                                    data-feather="circle"></i><span class="menu-item text-truncate"
+                                    data-i18n="List">جميع الطلاب</span></a>
+                        </li>
+                        <li><a class="d-flex align-items-center" href="app-invoice-preview.html"><i
+                                    data-feather="circle"></i><span class="menu-item text-truncate"
+                                    data-i18n="Preview">إضافة طالب</span></a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">المحتوى التعليمي</span><i
+                        data-feather="more-horizontal"></i>
+                </li>
+
+                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i
+                            data-feather="file-text"></i><span class="menu-title text-truncate"
+                            data-i18n="Invoice">الإختبارات الإلكترنية</span></a>
+                    <ul class="menu-content">
+                        <li><a class="d-flex align-items-center" href="app-invoice-list.html"><i
+                                    data-feather="circle"></i><span class="menu-item text-truncate"
+                                    data-i18n="List">جميع الإختبارات</span></a>
+                        </li>
+                        <li><a class="d-flex align-items-center" href="app-invoice-preview.html"><i
+                                    data-feather="circle"></i><span class="menu-item text-truncate"
+                                    data-i18n="Preview">إضافة إختبار</span></a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="video"></i><span
+                            class="menu-title text-truncate" data-i18n="Invoice">الكورسات</span></a>
+                    <ul class="menu-content">
+                        <li><a class="d-flex align-items-center" href="app-invoice-list.html"><i
+                                    data-feather="circle"></i><span class="menu-item text-truncate"
+                                    data-i18n="List">جميع الكورسات</span></a>
+                        </li>
+                        <li><a class="d-flex align-items-center" href="app-invoice-preview.html"><i
+                                    data-feather="circle"></i><span class="menu-item text-truncate"
+                                    data-i18n="Preview">إضافة كورس</span></a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class=" navigation-header"><span data-i18n="Forms &amp; Tables">الاشتراكات &amp; عمليات
+                        الدفع</span><i data-feather="more-horizontal"></i>
+                </li>
+
+                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="calendar"></i><span
+                            class="menu-title text-truncate" data-i18n="Invoice">الاشتراكات</span></a>
+                    <ul class="menu-content">
+                        <li><a class="d-flex align-items-center" href="app-invoice-list.html"><i
+                                    data-feather="circle"></i><span class="menu-item text-truncate"
+                                    data-i18n="List">جميع الاشتراكات</span></a>
+                        </li>
+                        <li><a class="d-flex align-items-center" href="app-invoice-preview.html"><i
+                                    data-feather="circle"></i><span class="menu-item text-truncate"
+                                    data-i18n="Preview">إضافة اشتراك</span></a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="d-flex align-items-center" href="index.html"><i
+                            data-feather="credit-card"></i><span class="menu-title text-truncate"
+                            data-i18n="Dashboards">عمليات إضافة الرصيد</span></a>
+                </li>
+
+                <li class=" navigation-header"><span data-i18n="Forms &amp; Tables">الصلاحيات &amp; الأدوار</span><i
+                        data-feather="more-horizontal"></i>
+                </li>
+
+                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i
+                            data-feather="user-plus"></i><span class="menu-title text-truncate"
+                            data-i18n="Invoice">الصلاحيات</span></a>
+                    <ul class="menu-content">
+                        <li><a class="d-flex align-items-center" href="app-invoice-list.html"><i
+                                    data-feather="circle"></i><span class="menu-item text-truncate"
+                                    data-i18n="List">جميع الدوار</span></a>
+                        </li>
+                        <li><a class="d-flex align-items-center" href="app-invoice-preview.html"><i
+                                    data-feather="circle"></i><span class="menu-item text-truncate"
+                                    data-i18n="Preview">إضافة دور</span></a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i
+                            data-feather="user-check"></i><span class="menu-title text-truncate"
+                            data-i18n="Invoice">المشرفين</span></a>
+                    <ul class="menu-content">
+                        <li><a class="d-flex align-items-center" href="app-invoice-list.html"><i
+                                    data-feather="circle"></i><span class="menu-item text-truncate"
+                                    data-i18n="List">جميع المشرفين</span></a>
+                        </li>
+                        <li><a class="d-flex align-items-center" href="app-invoice-preview.html"><i
+                                    data-feather="circle"></i><span class="menu-item text-truncate"
+                                    data-i18n="Preview">إضافة مشرف</span></a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class=" navigation-header"><span data-i18n="Forms &amp; Tables">الإعدادات</span><i
+                        data-feather="more-horizontal"></i>
+                </li>
+
+                <li class="nav-item"><a class="d-flex align-items-center" href="index.html"><i
+                            data-feather="settings"></i><span class="menu-title text-truncate"
+                            data-i18n="Dashboards">الإعدادات</span></a>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+    <!-- END: Main Menu-->
+
+    <!-- BEGIN: Content-->
+    <div class="app-content content ">
+        <div class="content-overlay"></div>
+        <div class="header-navbar-shadow"></div>
+        <div class="content-wrapper container-xxl p-0">
+
+            <div class="content-body">
+                <!-- account setting page -->
+                <section id="page-account-settings">
+                    <div class="row">
+                        <!-- left menu section -->
+                        <div class="col-md-12 mb-2">
+                            <ul class="nav nav-pills d-flex nav-left">
+                                <!-- general -->
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="account-pill-general" data-toggle="pill"
+                                        href="#account-vertical-general" aria-expanded="true">
+                                        <i data-feather="user" class="font-medium-3 mr-1"></i>
+                                        <span class="font-weight-bold">الاعدادات العاملة</span>
+                                    </a>
+                                </li>
+                                <!-- change password -->
+                                <li class="nav-item">
+                                    <a class="nav-link" id="account-pill-password" data-toggle="pill"
+                                        href="#account-vertical-password" aria-expanded="false">
+                                        <i data-feather="lock" class="font-medium-3 mr-1"></i>
+                                        <span class="font-weight-bold">تغيير الباسورد</span>
+                                    </a>
+                                </li>
+                                <!-- information -->
+                                <li class="nav-item">
+                                    <a class="nav-link" id="account-pill-info" data-toggle="pill"
+                                        href="#account-vertical-info" aria-expanded="false">
+                                        <i data-feather="info" class="font-medium-3 mr-1"></i>
+                                        <span class="font-weight-bold">اعدادات محركات البحث</span>
+                                    </a>
+                                </li>
+                                <!-- social -->
+                                <li class="nav-item">
+                                    <a class="nav-link" id="account-pill-social" data-toggle="pill"
+                                        href="#account-vertical-social" aria-expanded="false">
+                                        <i data-feather="link" class="font-medium-3 mr-1"></i>
+                                        <span class="font-weight-bold">السوشيال ميديا</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--/ left menu section -->
+
+                        <!-- right content section -->
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="tab-content">
+                                        <!-- general tab -->
+                                        <div role="tabpanel" class="tab-pane active" id="account-vertical-general"
+                                            aria-labelledby="account-pill-general" aria-expanded="true">
+                                            <!-- header media -->
+                                            <div class="media">
+                                                <a href="javascript:void(0);" class="mr-25">
+                                                    <img src="../../../app-assets/images/portrait/small/avatar-s-11.jpg"
+                                                        id="account-upload-img" class="rounded mr-50"
+                                                        alt="profile image" height="80" width="80" />
+                                                </a>
+                                                <!-- upload and reset button -->
+                                                <div class="media-body mt-75 ml-1">
+                                                    <label for="account-upload"
+                                                        class="btn btn-sm btn-primary mb-75 mr-75">رفع صورة</label>
+                                                    <input type="file" id="account-upload" hidden accept="image/*" />
+                                                    <button class="btn btn-sm btn-outline-secondary mb-75">اعادة
+                                                        تعيين</button>
+                                                    <p>نوع الصور المسموح بها ( JPG , PNG , JPEG )</p>
+                                                </div>
+                                                <!--/ upload and reset button -->
+                                            </div>
+                                            <!--/ header media -->
+
+                                            <!-- form -->
+                                            <form class="validate-form mt-2">
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-12">
+                                                        <div class="form-group">
+                                                            <label for="account-username">الاسم</label>
+                                                            <input type="text" class="form-control"
+                                                                id="account-username" name="username"
+                                                                placeholder="مثال : خالد شبل" value="" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6">
+                                                        <div class="form-group">
+                                                            <label for="account-e-mail">البريد الإلكترونى</label>
+                                                            <input type="email" class="form-control" id="account-e-mail"
+                                                                name="email" placeholder="ex: khaled@gmail.com"
+                                                                value="" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6">
+                                                        <div class="form-group">
+                                                            <label for="account-company">اسم الموقع</label>
+                                                            <input type="text" class="form-control" id="account-company"
+                                                                name="company" placeholder="مثال : ماستر باس برو"
+                                                                value="" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <button type="submit" class="btn btn-primary mt-2 mr-1">حفظ
+                                                            التعديلات</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <!--/ form -->
+                                        </div>
+                                        <!--/ general tab -->
+
+                                        <!-- change password -->
+                                        <div class="tab-pane fade" id="account-vertical-password" role="tabpanel"
+                                            aria-labelledby="account-pill-password" aria-expanded="false">
+                                            <!-- form -->
+                                            <form class="validate-form">
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-12">
+                                                        <div class="form-group">
+                                                            <label for="account-old-password">الباسورد القديم</label>
+                                                            <div
+                                                                class="input-group form-password-toggle input-group-merge">
+                                                                <input type="password" class="form-control"
+                                                                    id="account-old-password" name="password"
+                                                                    placeholder="كلمة المرور القديمة" />
+                                                                <div class="input-group-append">
+                                                                    <div class="input-group-text cursor-pointer">
+                                                                        <i data-feather="eye"></i>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-6">
+                                                        <div class="form-group">
+                                                            <label for="account-new-password">كلمة المرور
+                                                                الجديدة</label>
+                                                            <div
+                                                                class="input-group form-password-toggle input-group-merge">
+                                                                <input type="password" id="account-new-password"
+                                                                    name="new-password" class="form-control"
+                                                                    placeholder="كلمة المرور الجديدة" />
+                                                                <div class="input-group-append">
+                                                                    <div class="input-group-text cursor-pointer">
+                                                                        <i data-feather="eye"></i>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6">
+                                                        <div class="form-group">
+                                                            <label for="account-retype-new-password">إعادة كتابة كلمة
+                                                                المرور الجديدة</label>
+                                                            <div
+                                                                class="input-group form-password-toggle input-group-merge">
+                                                                <input type="password" class="form-control"
+                                                                    id="account-retype-new-password"
+                                                                    name="confirm-new-password"
+                                                                    placeholder="تأكيد كلمة المرور الجديدة" />
+                                                                <div class="input-group-append">
+                                                                    <div class="input-group-text cursor-pointer"><i
+                                                                            data-feather="eye"></i></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <button type="submit" class="btn btn-primary mr-1 mt-1">حفظ
+                                                            التغيرات</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <!--/ form -->
+                                        </div>
+                                        <!--/ change password -->
+
+                                        <!-- information -->
+                                        <div class="tab-pane fade" id="account-vertical-info" role="tabpanel"
+                                            aria-labelledby="account-pill-info" aria-expanded="false">
+                                            <!-- form -->
+                                            <form class="validate-form">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="form-group">
+                                                            <label for="accountTextarea">وصف الموقع</label>
+                                                            <textarea class="form-control" id="accountTextarea" rows="4"
+                                                                placeholder="أكتب وصف موقعك هنا"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <button type="submit" class="btn btn-primary mt-1 mr-1">حفظ
+                                                            التغيرات</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <!--/ form -->
+                                        </div>
+                                        <!--/ information -->
+
+                                        <!-- social -->
+                                        <div class="tab-pane fade" id="account-vertical-social" role="tabpanel"
+                                            aria-labelledby="account-pill-social" aria-expanded="false">
+                                            <!-- form -->
+                                            <form class="validate-form">
+                                                <div class="row">
+                                                    <!-- social header -->
+                                                    <div class="col-12">
+                                                        <div class="d-flex align-items-center mb-2">
+                                                            <i data-feather="link" class="font-medium-3"></i>
+                                                            <h4 class="mb-0 ml-75">لينكات التواصل الاجتماعى</h4>
+                                                        </div>
+                                                    </div>
+                                                    <!-- twitter link input -->
+                                                    <div class="col-12 col-sm-6">
+                                                        <div class="form-group">
+                                                            <label for="account-twitter">Twitter</label>
+                                                            <input type="text" id="account-twitter" class="form-control"
+                                                                placeholder="أضف لينك " value="" />
+                                                        </div>
+                                                    </div>
+                                                    <!-- facebook link input -->
+                                                    <div class="col-12 col-sm-6">
+                                                        <div class="form-group">
+                                                            <label for="account-facebook">Facebook</label>
+                                                            <input type="text" id="account-facebook"
+                                                                class="form-control" placeholder="أضف لينك" />
+                                                        </div>
+                                                    </div>
+                                                    <!-- linkedin link input -->
+                                                    <div class="col-12 col-sm-6">
+                                                        <div class="form-group">
+                                                            <label for="account-linkedin">LinkedIn</label>
+                                                            <input type="text" id="account-linkedin"
+                                                                class="form-control" placeholder="أضف لينك" value="" />
+                                                        </div>
+                                                    </div>
+                                                    <!-- instagram link input -->
+                                                    <div class="col-12 col-sm-6">
+                                                        <div class="form-group">
+                                                            <label for="account-instagram">Instagram</label>
+                                                            <input type="text" id="account-instagram"
+                                                                class="form-control" placeholder="أضف لينك" />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-12">
+                                                        <!-- submit and cancel button -->
+                                                        <button type="submit" class="btn btn-primary mr-1 mt-1">حفظ
+                                                            التغيرات</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <!--/ form -->
+                                        </div>
+                                        <!--/ social -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/ right content section -->
+                    </div>
+                </section>
+                <!-- / account setting page -->
+
+            </div>
+        </div>
+    </div>
+    <!-- END: Content-->
+
+    <div class="sidenav-overlay"></div>
+    <div class="drag-target"></div>
+
+    <!-- BEGIN: Footer-->
+    <footer class="footer footer-static footer-light">
+        <p class="clearfix mb-0"><span class="float-md-left d-block d-md-inline-block mt-25">COPYRIGHT &copy; 2021<a
+                    class="ml-25" href="https://1.envato.market/pixinvent_portfolio" target="_blank">Pixinvent</a><span
+                    class="d-none d-sm-inline-block">, All rights Reserved</span></span><span
+                class="float-md-right d-none d-md-block">Hand-crafted & Made with<i data-feather="heart"></i></span></p>
+    </footer>
+    <button class="btn btn-primary btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button>
+    <!-- END: Footer-->
+
+
+    <!-- BEGIN: Vendor JS-->
+    <script src="../../../app-assets/vendors/js/vendors.min.js"></script>
+    <!-- BEGIN Vendor JS-->
+
+    <!-- BEGIN: Page Vendor JS-->
+    <script src="../../../app-assets/vendors/js/forms/select/select2.full.min.js"></script>
+    <script src="../../../app-assets/vendors/js/forms/validation/jquery.validate.min.js"></script>
+    <script src="../../../app-assets/vendors/js/pickers/flatpickr/flatpickr.min.js"></script>
+    <!-- END: Page Vendor JS-->
+
+    <!-- BEGIN: Theme JS-->
+    <script src="../../../app-assets/js/core/app-menu.js"></script>
+    <script src="../../../app-assets/js/core/app.js"></script>
+    <!-- END: Theme JS-->
+
+    <!-- BEGIN: Page JS-->
+    <script src="../../../app-assets/js/scripts/pages/page-account-settings.js"></script>
+    <!-- END: Page JS-->
+
+    <script>
+        $(window).on('load', function () {
+            if (feather) {
+                feather.replace({
+                    width: 14,
+                    height: 14
+                });
+            }
+        })
+    </script>
+</body>
+<!-- END: Body-->
+
+</html>
